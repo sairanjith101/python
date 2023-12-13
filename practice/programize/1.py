@@ -1,8 +1,9 @@
-import random
+from functools import reduce
 
-def password_generator():
-    char = '!@#$%&*+'
-    size = random.randint(5,6)
-    return ''.join(random.choice(char) for i in range(size))
+# Assuming parser_all is a list of numbers
+parser_all = [1, 2, 3, 4, 5]
 
-print(password_generator())
+# Using reduce to sum up the elements in parser_all
+result = reduce(lambda x, y: x + y, parser_all)
+
+print(result)
