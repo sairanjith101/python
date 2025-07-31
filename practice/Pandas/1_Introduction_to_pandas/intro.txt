@@ -1,0 +1,1 @@
+Pandas is an open-source library built on top of NumPy, designed for data manipulation and analysis.
